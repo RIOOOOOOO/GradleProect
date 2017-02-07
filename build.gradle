@@ -5,3 +5,14 @@ jar {
       attributes 'Main-Class': 'main.java.GradleApplication'
    }
 }
+
+task runJar(dependsOn:jar) << {
+  javaexec { 
+    main="-jar";
+    args = [
+            "/build/libs/GradleJavaProject.jar",
+            "-c",
+            "FrontPage?suite&format=text"
+           ]
+  } 
+}
