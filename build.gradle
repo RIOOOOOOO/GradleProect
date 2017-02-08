@@ -2,7 +2,7 @@ apply plugin: 'java'
 
 jar {
    manifest {
-      attributes 'Main-Class': ${mainMethod};
+      attributes 'Main-Class': '${mainMethod}';
    }
 }
 
