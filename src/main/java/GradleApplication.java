@@ -1,7 +1,7 @@
 package main.java;
 
 public class GradleApplication {
-	public static void main(String[] args) {
+	public static void m1(String[] args) {
 		System.out.println("I am gradle Project out");
 	}
 }
