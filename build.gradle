@@ -2,7 +2,7 @@ apply plugin: 'java'
 
 jar {
    manifest {
-      attributes 'Main-Class': '{0}'
+      attributes 'Main-Class': {0}
    }
 }
 
