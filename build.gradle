@@ -5,3 +5,7 @@ jar {
       attributes 'Main-Class': 'main.java.MainApplication'
    }
 }
+task copyDeps(type: Copy) {
+  from configurations.runtime
+  into 'build/libs'
+}
