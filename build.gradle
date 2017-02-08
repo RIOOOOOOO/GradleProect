@@ -1,18 +1,18 @@
 apply plugin: 'java'
 
-jar {
-   manifest {
+jar '{'
+   manifest '{'
       attributes 'Main-Class': {0}
-   }
-}
+   '}'
+'}'
 
-task runJar(dependsOn:jar) << {
-  javaexec { 
+task runJar(dependsOn:jar) << '{'
+  javaexec '{'
     main="-jar";
     args = [
             "build/libs/GradleJavaProject.jar",
             "-c",
             "FrontPage?suite&format=text"
            ]
-  } 
-}
+  '}' 
+'}'
